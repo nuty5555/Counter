@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.bwt1433.counter.MainActivity;
 import com.example.bwt1433.counter.R;
@@ -16,6 +17,8 @@ import com.example.bwt1433.counter.R;
  */
 
 public class RegisterFragment extends Fragment {
+    //Explicit
+    private String nameString , userString, passwordString ;
 
     @Override
 public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -23,6 +26,20 @@ public void onActivityCreated(@Nullable Bundle savedInstanceState) {
 
     //Create Toolbar
         createToolbar();
+        saveController();
+    }
+
+
+//        Save Controller
+        private void saveController (){
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imvsave);
+        imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+        });
+
 
 
     }

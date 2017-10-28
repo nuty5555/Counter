@@ -12,6 +12,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
         <!--save button-->
         <ImageView
+            android:id="@+id/imvsave"
           android:layout_marginRight="10dp"
             android:src="@drawable/ic_action_save"
             android:layout_width="wrap_content"
