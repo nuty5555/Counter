@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.bwt1433.counter.MainActivity;
@@ -36,6 +37,25 @@ public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+//                    Get value from editext
+                    EditText nameeditText = (EditText) getView().findViewById(R.id.edtname);
+                    EditText userEditText = (EditText) getView().findViewById(R.id.edtuser);
+                    EditText passwordEditText = (EditText) getView().findViewById(R.id.edtpassword);
+
+//                    Change type Value to
+                    nameString = nameeditText.getText().toString().trim();
+                    userString = nameeditText.getText().toString().trim();
+                    passwordString = nameeditText.getText().toString().trim();
+
+//                    Check space
+                    if (nameString.equals("")|| userString.equals("") || passwordString.equals("") ) {
+//                            Have space
+                    } else {
+//                        No space
+
+
+                    }
+
 
                 }
         });
